@@ -1,0 +1,337 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+ <meta lang="ro">
+ <meta name="author" content="Maxim Ionescu">
+ <meta name="description" content="Programare web tutorial">
+ <meta name="keywords" content="HTML,CSS,Processing,JavaScript">
+
+<title>Programarea Web</title>
+
+<link href="style.css" type="text/css" rel="stylesheet">
+<link href="style2.css" type="text/css" rel="stylesheet">
+<link rel="shortcut icon" href="images/favimg.png" type="image/x-icon" >
+<link rel="icon" href="images/favimg.png">
+<style>
+
+</style>
+<script>
+function background(){
+    document.body.style.background ="url(images/matrix.gif)";
+	
+
+}
+function normal(){
+	document.body.style.background="url(images/bgimg.jpg)"
+}
+
+</script>
+</head>
+<body>
+<div class="title" id="titlecontainer">
+<img id="title" src="images/titlu.png" alt="Programarea Web" style="border:none;width:600px;height:73px">
+</div>
+<div class="topnav">
+<a href="index.html">Home</a>
+
+<a href="html.html">HTML</a>
+<a href="css.html">CSS</a>
+<a class="active" href="javascript.html">JavaScript</a>
+<a href="processing.html">Processing</a>
+<a href="other.html">Other</a>
+</div>
+<hr class="t">
+<button class="button" type="button"onclick="background()">Change</button><br>
+<button class="button" type="button"onclick="normal()">Undo</button>
+<div class="content">
+<h3 class="subtitle">Introducere</h3>
+<p class="paragraf">HTML ne ajuta sa creăm structura paginii web.</p>
+<p class="paragraf">CSS ne ajuta la design-ul paginii web.</p>
+<p class="paragraf">Javascript se folosește pentru a programa comportamentul paginii și pentru a o face interactiva.</p>
+<hr>
+<h3 class="subtitle">Javascript</h3>
+<img src="images/jsimg.png" alt="jsimg.png" style="width:392px;height:170px;float:right">
+<p class="paragraf">Este un limbaj de programare orientată pe obiecte bazat pe conceptul prototipurilor.
+Este folosit mai ales pentru introducerea unor funcționalități în paginile web, codul JavaScript din aceste pagini
+ fiind rulat de către browser. Limbajul este binecunoscut pentru folosirea sa în construirea siturilor web, dar este 
+ folosit și pentru accesul la obiecte încastrate (embedded objects) în alte aplicații. </p>
+ <p class="paragraf"> A fost dezvoltat inițial de către Brendan Eich de la Netscape Communications Corporation sub numele de Mocha,
+ apoi LiveScript, și denumit în final JavaScript.</p>
+ <p class="paragraf"><b>Nota:</b> să nu se confunde cu limbajul de programare Java.Ele sunt diferite atât ca structură cât și ca sintaxa.
+ <hr>
+ <h3 class="subtitle">Ce poate face Javascript?</h3>
+ 
+<ul style="list-style-type:square">
+<li class="paragraf">Poate să modifice atribute din HTML</li>
+<li class="paragraf">Poate să modifice stiluri</li>
+<li class="paragraf">Poate să ascunda si sa arate elemente HTML</li>
+<p class="paragraf">Aici este o demonstrație a ceea ce poți face cu javascript:</p>
+<div class="interactive">
+
+<img id="img1" src="images/becstins.png" style="width:278px;height:333px" alt="imagine bec">
+<button class="button2" type="button" onclick="document.getElementById('img1').src='images/becaprins.png'">On</button>
+<button class="button3" type="button" onclick="document.getElementById('img1').src='images/becstins.png'">Off</button><br>
+</div>
+<hr>
+<h3 class="subtitle">Elemente de bază ale limbajului</h3>
+<h4 class="subtitle">Comentariile</h4>
+<p class="paragraf">Au aceeași sintaxa ca in C++.</p>
+<div class="section1">
+<code>//comentariu pe o linie</code><br>
+<code>/*Comentariu <br>
+pe mai <br>
+multe linii*/</code>
+</div><hr>
+<h3 class="subtitle">Variabilele</h3>
+<p class="paragraf">Se declară dupa sintaxa:</p>
+<div class="section1">
+<code>var x=20;</code>
+</div><hr>
+<h3 class="subtitle">Funcțiile</h3>
+<p class="paragraf">Au urmatoarea sintaxa:</p>
+<div class="section1">
+<code>function nume_functie()<br>
+{aici este codul funcției}</code>
+</div><hr>
+<h3 class="subtitle">Operatori</h3>
+<p class="paragraf"><b>Observație:</b>Javascript suportă ordinea efectuării operatiilor matemetice!</p>
+<h5 class="note"><b>Aritmetici</b></h5>
+<ul style="list-style-type:square">
+<li>+ adunare</li>
+<li>- scădere</li>
+<li>* înmultire</li>
+<li>/ împartire</li>
+<li>% restul împartirii(modulo)</li>
+<li>++ incrementare</li>
+<li>-- decrementare</li>
+</ul><hr>
+<h5 class="note"><b>De atribuire</b></h5>
+<ul style="list-style-type:square">
+<li>+= adauga si atribuie</li>
+<li>-= scade si atribuie</li>
+<li>*= înmulteste si atribuie</li>
+<li>/= împarte si atribuie</li>
+<li>%= modulo si atribuie</li>
+</ul><hr>
+<h5 class="note"><b>Comparativi</b></h5>
+<ul style="list-style-type:square">
+<li>= egal</li>
+<li>!= diferit</li>
+<li>> Mai mare decât</li>
+<li>< Mai mic decât</li>
+<li><= Mai mic sau egal cu</li>
+<li>==== Identice (egale și de același tip)</li>
+<li>!=== Nu sunt identice</li>
+</ul><hr>
+<h5 class="note"><b>Logici</b></h5>
+<p class="paragraf">JavaScript oferă patru operatori logici:</p>
+<ul style="list-style-type:square">
+<li>negația unară (NOT = !a)</li>
+<li>disjuncția binară (OR = a || b)</li>
+<li>conjuncția binară (AND = a && b)</li>
+<li>condiționala ternară ( c ? t : f )</li>
+</ul><hr>
+<h3 class="subtitle">Exemple:</h3>
+<p class="note">O prismă alcatuită din triunghiuri</p>
+<div class="section1">
+<pre>
+&ltcanvas id="c2"width="500"height="500"style="border:1px solid #d3d3d3;"&gt&lt/canvas&gt <span class="coment">/*setează dimensiunile,</span>
+<span class="coment">id-ul și bordura pânzei*/</span>
+&ltscript&gt
+var z=document.getElementById("c2");<span class="coment">//declară variababila ce are conținutul pânzei</span>
+var c=z.getContext("2d");
+var nr=350;<span class="coment">//declară numărul de triunghiuri</span>
+var size=60;
+c.strokeStyle="green";<span class="coment">//setează culoarea</span>
+for(var i=60;i&ltnr;i=i+3) <span class="coment">//instrucțiune repetitivă</span>
+{c.beginPath();
+c.moveTo(i,i);<span class="coment">//mută <i>"cursorul"</i> la coordonatele specificate</span>
+c.lineTo(i+size,i);<span class="coment">//trasează linie la coordonatele specificate</span>
+c.lineTo(i+size/2,i-50);
+c.lineTo(i,i);
+c.stroke();<span class="coment">//pune contur liniilor,astfel făcându-le vizibile </span>
+
+}
+&lt/script&gt
+</pre>
+</div>
+<canvas id="c1"width="300"height="300"style="border:1px solid #d3d3d3;"></canvas> <br>
+<script  src="script.js"/>
+<br><hr>
+<p class="note">Definirea unei funcții</p>
+<p class="tomato">Uite cum am realizat capul de robot.</p>
+<div class="section1">
+<pre>
+&ltcanvas id="c3"width="300"height="300"style="border:1px solid #d3d3d3;"&gt&lt/canvas&gt
+&ltscript&gt
+var g=document.getElementById("c3");
+var c=g.getContext("2d");
+
+function square(x,y,width){<span class="coment">//definește funcția square()</span>
+c.strokeRect(x,y,width,width);
+}
+c.fillStyle="rgba(40,40,40,0.5)";<span class="coment">//setează culoarea urmatorului element</span>
+c.fillRect(50,40,200,200);
+square(50,40,200);<span class="coment">//afișează capul</span>
+c.fillStyle="rgba(20,40,240,0.5)";
+c.fillRect(70,70,60,60);
+square(70,70,60);<span class="coment">//afișează ochiul din stanga(ta)</span>
+c.fillStyle="rgba(20,40,240,0.5)";
+c.fillRect(170,70,60,60);
+square(170,70,60);<span class="coment">//afișează ochiul din dreapta(ta)</span>
+c.fillStyle="rgba(20,244,140,0.5)";
+c.fillRect(80,170,145,40);<span class="coment">umple elementul cu o culoare setată</span>
+c.strokeRect(80,170,145,40);<span class="coment">//pune contur gurii</span>
+&lt/script&gt
+</pre>
+</div>
+<canvas id="c3"width="300"height="300"style="border:1px solid #d3d3d3;"></canvas>
+<script src="script2.js">
+</script>
+<hr>
+<p class="tomato">Aici este un copac facut cu javascript</p>
+<canvas id="ctree"width="400"height="300"style="border:1px solid #d3d3d3;"></canvas>
+<script>
+var z=document.getElementById("ctree");
+var c=z.getContext("2d");
+function drawBranch(l, direction) {
+  c.save();
+  c.fillStyle="brown";
+  c.fillRect(-1, 0, 2, -l);
+  c.translate(0, -l);
+  if (l > 5) {
+    drawBranch(l * 0.8, -direction);
+    c.rotate(0.5 * direction);
+    drawBranch(l * 0.7, -direction);
+  } else {
+    c.fillStyle = "green";
+    c.fillRect(-2, -2, 4, 4);
+  }
+  c.restore();
+}
+c.translate(200, 250);
+drawBranch(50, 1);
+</script>
+<hr>
+<p class="note">Codul sursa</p>
+<div class="section1">
+<pre>
+&ltcanvas id="ctree"width="500"height="500"style="border:1px solid #d3d3d3;"&gt&lt/canvas&gt <span class="coment">//aici sunt stabilite proprietățiile pânzei</span>
+&ltscript&gt
+var z=document.getElementById("ctree");
+var c=z.getContext("2d");
+function drawBranch(l, direction) {
+  c.save();<span class="coment">//salvează setările(proprietățiile)actuale</span>
+  c.fillStyle="brown";<span class="coment">//setează culoarea ca fiind maro</span>
+  c.fillRect(-1, 0, 2, -l);<span class="coment">//umple dreptunghiuri care au culoarea respectivă</span>
+  c.translate(0, -l);<span class="coment">//muta coordonatele x și y în locul precizat</span>
+  if (l > 5) {
+    drawBranch(l * 0.8, -direction);
+    c.rotate(0.5 * direction);
+    drawBranch(l * 0.7, -direction);
+  } else {
+    c.fillStyle = "green";<span class="coment"> //seteaza culoarea ca fiind verde</span>
+    c.fillRect(-2, -2, 4, 4);
+  }
+  c.restore();<span class="coment">//revine la setările salvate la ultimul c.save()</span>
+}
+c.translate(200, 250);<span class="coment">  </span>
+drawBranch(50, 1);<span class="coment">//apel al fucției</span>
+&lt/script&gt
+</pre>
+</div>
+<hr>
+<p class="tomato">O animație</p>
+<canvas id="anima" width="400"height="300"style="border:1px solid #d3d3d3;"></canvas>
+<script>
+var b=document.getElementById("anima");
+var c=b.getContext("2d");
+
+var pas = 50; // In milisecunde
+var unghi = 0;
+var size = 80;
+var w = c.canvas.width;
+var h = c.canvas.height;
+var t;
+
+function update() {//creăm o funcție update care să execute instrucțiunile în mod repetat
+  // curăță pânza
+  c.clearRect(0, 0, w, h);
+
+  //desenează cutia în centrul pânzei și se setează un unghi
+  c.save();
+  c.translate(w / 2, h / 2);
+  c.rotate(Math.PI * unghi / 180);//Math.PI obține valoarea aproximata a lui PI
+  c.strokeRect(-size / 2, -size / 2, size, size);
+  c.rotate(Math.PI * unghi / 180);
+  c.strokeRect(-size / 2, -size / 2, size, size);
+  c.rotate(Math.PI * unghi / 180);
+  c.strokeRect(-size / 2, -size / 2, size, size);
+  c.restore();
+
+  // marește unghiul de rotație
+  unghi += 1;
+
+  clearTimeout(t);
+  // repetă instrucțiunile după o perioadă
+  t = setTimeout(update, pas);
+}
+
+update();//apelăm funcția o dată
+</script>
+<hr>
+<p class="note">Codul sursă</p>
+<div class="section1">
+<code>
+<pre>
+&ltscript&gt
+var b=document.getElementById("anima");
+var c=b.getContext("2d");
+
+var pas = 50;<span class="coment"> // In milisecunde</span>
+var unghi = 0;
+var size = 80;
+var w = c.canvas.width;
+var h = c.canvas.height;
+var t;
+
+function update() {<span class="coment">//creăm o funcție update care să execute instrucțiunile în mod repetat</span>
+  <span class="coment">// curăță pânza</span>
+  c.clearRect(0, 0, w, h);
+
+  <span class="coment">//desenează cutia în centrul pânzei și se setează un unghi</span>
+  c.save();
+  c.translate(w / 2, h / 2);
+  c.rotate(Math.PI * unghi / 180);<span class="coment">//Math.PI obține valoarea aproximata a lui PI</span>
+  c.strokeRect(-size / 2, -size / 2, size, size);
+  c.rotate(Math.PI * unghi / 180);
+  c.strokeRect(-size / 2, -size / 2, size, size);
+  c.rotate(Math.PI * unghi / 180);<span class="coment">//c.rotate(unghi)întoarce elementul cu câte grade sunt trecute între paranteze(se măsoară cu radiani)</span>
+  c.strokeRect(-size / 2, -size / 2, size, size);
+  c.restore();
+
+  <span class="coment">// marește unghiul de rotație</span>
+  unghi += 1;
+
+  clearTimeout(t);
+  <span class="coment">// repetă instrucțiunile după o perioadă</span>
+  t = setTimeout(update, pas);
+}
+
+update();<span class="coment">//apelăm funcția o dată</span>
+&lt/script&gt
+</pre>
+</code>
+</div>
+<hr>
+<h3 class="subtitle">Link-uri de unde puteți aprofunda subiectul</h3>
+<ul class="links">
+<li class="links"><a href="https://www.javascript.com/" target="_blank">https://www.javascript.com</a></li>
+<li class="links"><a href="https://www.codeschool.com/learn/javascript" target="_blank">https://www.codeschool.com/learn/javascript</a></li>
+<li class="links"><a href="https://www.w3schools.com/" target="_blank">https://www.w3schools.com</a></li>
+<li class="links"><a href="https://www.sololearn.com/" target="_blank">https://www.sololearn.com</a></li>
+</ul>
+</div>
+</body>
+</html>

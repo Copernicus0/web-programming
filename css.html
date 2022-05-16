@@ -1,0 +1,162 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+ <meta lang="ro">
+ <meta name="author" content="Maxim Ionescu">
+ <meta name="description" content="Programare web tutorial">
+ <meta name="keywords" content="HTML,CSS,Processing,JavaScript">
+
+<title>Programarea Web</title>
+
+<link href="style.css" type="text/css" rel="stylesheet">
+<link href="style2.css" type="text/css" rel="stylesheet">
+<link rel="shortcut icon" href="images/favimg.png" type="image/x-icon">
+<link rel="icon" href="images/favimg.png">
+<style>
+.clasa{color:green}
+#id{color:powderblue}
+</style>
+<script>
+function background(){
+    document.body.style.background ="url(images/matrix.gif)"
+}
+function normal(){
+	document.body.style.background="url(images/bgimg.jpg)"
+}
+</script>
+</head>
+<body>
+<div class="title">
+<img src="images/titlu.png" alt="Programarea Web" style="border:none;width:600px;height:73px">
+</div>
+<div class="topnav">
+<a href="index.html">Home</a>
+<a href="html.html">HTML</a>
+<a class="active" href="css.html">CSS</a>
+<a href="javascript.html">JavaScript</a>
+<a href="processing.html">Processing</a>
+<a href="other.html">Other</a>
+</div>
+<hr class="t">
+<button class="button" type="button"onclick="background()">Change</button><br>
+<button class="button" type="button"onclick="normal()">Undo</button>
+<div class="content">
+<h3 class="subtitle">Ce este CSS?</h3>
+<strong>
+<img class="css_img" src="images/css_img1.png" alt="css_img1" style="width:300px;height:177px">
+<p class="paragraf"><span title="CascadingStyleSheets">CSS</span> este o metoda prin care putem adăuga diferite stiluri paginii web.</p>
+<p class="paragraf">Stilurile pot fi adăugate:</p>
+
+<ol class="span">
+<li>În linie</li>
+<li>În interiorul paginii intre etichetele &ltstyle&gt si &lt/style&gt</li>
+<li>Într-un fisier extern cu extensia .css ;în acest caz trebuie să folosim eticheta &ltlink&gt</li>
+</ol></strong>
+
+
+<strong>
+<div class="section1">
+<p class="paragraf">Pentru a lega fișiere externe paginii folosim sintaxa:</p><br>
+<code>&ltlink href="numefisier.css"type="text/css"rel="stylesheet"&gt
+</code>
+<br><br><hr>
+<p class="paragraf">Pentru a adauga stiluri in linie,să zicem într-un paragraf vom folosi:</p>
+<code>&ltp style="color:red"&gtAcest paragraf va fi de culoare roșie.&lt/p&gt </code><br>
+<p class="paragraf">Se va afișa:</p>
+<p style="color:red">Acest paragraf va fi de culoare roșie.</p>
+<br><hr>
+<p class="paragraf">Pentru a adauga stiluri in interiorul paginii,vom definii o clasă sau un id unui element de pe pagina,
+apoi mergem la head-ul paginii,unde vom descrie stilurile elementelor.</p>
+<code><p class="paragraf">In head:</p>
+&ltstyle&gt<br>
+.clasa{color:green}<br>
+#id{color:powderblue}<br>
+&lt/style&gt <br>
+<p class="paragraf">In body:</p>
+&ltp class="clasa"&gtParagraf verde&lt/p&gt <br>
+<p class="clasa">Paragraf verde</p> 
+&ltp id="id"&gtParagraf albastru deschis &lt/p&gt <br>
+<p id="id">Paragraf albastru deschis </p>
+<hr>
+<p class="paragraf">Pentru fișiere css externe va fi aceeași sintaxa.</p>
+</code>
+
+</div>
+<img src="images/CSS_cube.gif" alt="CSS_cube.gif" class="cube">
+<hr>
+<h3 class="subtitle">Culoarea</h3>
+<p class="paragraf">Cu ajutorul CSS puteți adăuga culoare elementelor HTML.</p>
+<p class="paragraf">Se pot definii:</p>
+<ul>
+<li>cu funcția rgb(red,green,blue),ce conține numere de la 0 la 255;</li>
+<li>cu funcția <a href="#rgba" style="text-decoration:none" class="a">rgba</a>(red,green,blue,alpha);</li>
+<li>cu valori hexazecimale de forma #rrggbb,si conțin valori de la 00 la ff;<a style="text-decoration:none" class="a" href="https://ro.wikipedia.org/wiki/Sistem_hexazecimal"target="_blank">Afla mai multe despre numerele hexazecimale aici!</a></li>
+<li>sau pur și simplu punand numele culorii in engleză.</li>
+</ul>
+<hr>
+<p class="note">Aici avem niște exemple:</p>
+<p class="tomato">Culori definite cu denumirea in engleză</p>
+<h1 style="background-color:Tomato;">Tomato</h1>
+<h1 style="background-color:Orange;">Orange</h1>
+<h1 style="background-color:DodgerBlue;">DodgerBlue</h1>
+<h1 style="background-color:MediumSeaGreen;">MediumSeaGreen</h1>
+<h1 style="background-color:Gray;">Gray</h1>
+<h1 style="background-color:SlateBlue;">SlateBlue</h1>
+<h1 style="background-color:Violet;">Violet</h1>
+<h1 style="background-color:LightGray;">LightGray</h1>
+<hr>
+<p class="tomato">Culori definite cu funcția rgb()</p>
+<h1 style="background-color:rgb(255, 0, 0);">rgb(255, 0, 0)</h1>
+<h1 style="background-color:rgb(0, 0, 255);">rgb(0, 0, 255)</h1>
+<h1 style="background-color:rgb(60, 179, 113);">rgb(60, 179, 113)</h1>
+<h1 style="background-color:rgb(238, 130, 238);">rgb(238, 130, 238)</h1>
+<h1 style="background-color:rgb(255, 165, 0);">rgb(255, 165, 0)</h1>
+<h1 style="background-color:rgb(106, 90, 205);">rgb(106, 90, 205)</h1>
+<h1 style="background-color:rgb(0, 0, 0);color:rgb(255,255,255)">rgb(0, 0, 0)</h1>
+<h1 style="background-color:rgb(60, 60, 60);">rgb(60, 60, 60)</h1>
+<h1 style="background-color:rgb(120, 120, 120);">rgb(120, 120, 120)</h1>
+<h1 style="background-color:rgb(180, 180, 180);">rgb(180, 180, 180)</h1>
+<h1 style="background-color:rgb(240, 240, 240);">rgb(240, 240, 240)</h1>
+<h1 style="background-color:rgb(255, 255, 255);">rgb(255, 255, 255)</h1>
+<hr>
+<p id="rgba" class="tomato">Culori definite cu funcția rgba()</p>
+<p class="paragraf">Functia rgba(red,green,blue,alpha)</p>
+<p class="paragraf">Alpha reprezinta gradul de transparenta a culorii</p>
+<p class="paragraf">Are valori de la 0.0 (si este invizibila)-1.0(si este 100% solida)</p>
+<h1 style="background-color:rgba(0, 0, 255,0.0);">rgba(0, 0, 255,0.0)</h1>
+<h1 style="background-color:rgba(0, 0, 255,0.1);">rgba(0, 0, 255,0.1)</h1>
+<h1 style="background-color:rgba(0, 0, 255,0.2);">rgba(0, 0, 255,0.2)</h1>
+<h1 style="background-color:rgba(0, 0, 255,0.3);">rgba(0, 0, 255,0.3)</h1>
+<h1 style="background-color:rgba(0, 0, 255,0.4);">rgba(0, 0, 255,0.4)</h1>
+<h1 style="background-color:rgba(0, 0, 255,0.5);">rgba(0, 0, 255,0.5)</h1>
+<h1 style="background-color:rgba(0, 0, 255,0.6);">rgba(0, 0, 255,0.6)</h1>
+<h1 style="background-color:rgba(0, 0, 255,0.7);">rgba(0, 0, 255,0.7)</h1>
+<h1 style="background-color:rgba(0, 0, 255,0.8);">rgba(0, 0, 255,0.8)</h1>
+<h1 style="background-color:rgba(0, 0, 255,0.9);">rgba(0, 0, 255,0.9)</h1>
+<h1 style="background-color:rgba(0, 0, 255,1.0);">rgba(0, 0, 255,1.0)</h1>
+<hr>
+<p class="tomato">Culori definite cu valori hexazecimale</p>
+<h1 style="background-color:#ff0000;">#ff0000</h1>
+<h1 style="background-color:#0000ff;">#0000ff</h1>
+<h1 style="background-color:#3cb371;">#3cb371</h1>
+<h1 style="background-color:#ee82ee;">#ee82ee</h1>
+<h1 style="background-color:#ffa500;">#ffa500</h1>
+<h1 style="background-color:#6a5acd;">#6a5acd</h1>
+<h1 style="background-color:#000000;color:#fff">#000000</h1>
+<h1 style="background-color:#3c3c3c;">#3c3c3c</h1>
+<h1 style="background-color:#787878;">#787878</h1>
+<h1 style="background-color:#b4b4b4;">#b4b4b4</h1>
+<h1 style="background-color:#f0f0f0;">#f0f0f0</h1>
+<h1 style="background-color:#ffffff;">#ffffff</h1>
+<span class="note">Notă:</span>
+<p class="paragraf">Puteți alege mai ușor culorile cu ajutorul acestui <a href="https://www.w3schools.com/colors/colors_picker.asp" target="_blank" style="text-decoration:none" class="a">site</a>!</p>
+</strong>
+
+
+
+
+</div>
+</div>
+</body>
+</html>

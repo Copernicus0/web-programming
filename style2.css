@@ -1,0 +1,151 @@
+.download{
+color:white;
+background-color:#009933;
+display:block;
+border:solid #00cc44;
+border-radius:10px;
+width:32%;
+text-decoration:none;
+font-size:50px;
+text-align:center;
+}
+.download:hover{
+background-color:#004d1a;
+border:solid #009933;
+}
+.download:active{
+background-color:#e6ffee;
+border:solid #b3ffcb;
+color:#009933;
+}
+
+.tabelm{
+border:solid;
+border-collapse:collapse;
+margin:10px;
+padding:20px;
+text-align:center;
+width:50%;
+font-size:25px;
+}
+#blue{
+background-color:dodgerblue;
+}
+.note{
+color:mediumseagreen;
+font-size:20px;
+}
+.section2{
+width:50%;
+}
+.css_img{
+float:right;
+position:relative;
+bottom:30px;
+
+}
+.css_img2{
+float:right;
+width:252px;
+height:262px;
+}
+
+.cube{
+float:right;
+width:126px;
+height:131px;
+position:relative;
+
+}
+
+
+ul.links{
+list-style-type:none;
+
+
+}
+
+li.links a{
+text-decoration:none;
+display:block;
+padding:10px;
+
+
+font-size:25px;
+width:50%;
+}
+
+li.links a:hover{
+background-color:#000;
+color:green;
+}
+
+li.links a:active{
+color:#fff;
+}
+.img1_js{
+width:400px;
+height:300px;
+float:right;
+position:relative;
+
+}
+.paragraf{
+font-family:georgia;
+
+}
+#canvas1{
+position:relative;
+left:50px;
+border-style:solid;
+border-width:3px;
+border-color:#eee;
+}
+.tomato{
+	
+	color:tomato;
+	font-size:20px;
+}
+.showfct{
+color:SlateBlue;
+}
+.a{
+	color:SlateBlue;
+}
+.a:hover{
+	color:violet;
+}
+.button{
+	background-color:black;
+	color:white;
+	width:70px;
+}
+.button:hover{
+	background-color:black;
+	color:lime;
+}
+.button:active{
+	background-color:#fff;
+	color:lime;
+}
+.button2{
+	background-color:yellow;
+}
+.button2:hover{
+	background-color:#e6e600;	
+}
+.button2:active{
+	background-color:#ffffb3;
+	
+}
+.button3{
+	background-color:black;
+	color:white;
+}
+.button3:hover{
+	background-color:#808080;
+}
+.button3:active{
+	background-color:#fff;
+	color:#000;
+}

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+ <meta lang="ro">
+ <meta name="author" content="Maxim Ionescu">
+ <meta name="description" content="Programare web tutorial">
+ <meta name="keywords" content="HTML,CSS,Processing,JavaScript">
+
+<title>Programarea Web</title>
+
+<link href="style.css" type="text/css" rel="stylesheet">
+<link href="style2.css" type="text/css" rel="stylesheet">
+<link rel="shortcut icon" href="images/favimg.png" type="image/x-icon">
+<link rel="icon" href="images/favimg.png">
+<style>
+ 
+</style>
+<script>
+function background(){
+    document.body.style.background ="url(images/matrix.gif)"
+}
+function normal(){
+	document.body.style.background="url(images/bgimg.jpg)"
+}
+</script>
+</head>
+<body>
+<div class="title">
+<img src="images/titlu.png" alt="Programarea Web" style="border:none;width:600px;height:73px">
+</div>
+<div class="topnav">
+<a href="index.html">Home</a>
+<a class="active" href="html.html">HTML</a>
+<a href="css.html">CSS</a>
+<a href="javascript.html">JavaScript</a>
+<a href="processing.html">Processing</a>
+<a href="other.html">Other</a>
+</div>
+<hr class="t">
+<button class="button" type="button"onclick="background()">Change</button><br>
+<button class="button" type="button"onclick="normal()">Undo</button>
+<div class="content">
+<img src="images/html.jpg" style="width:300;height:150;float:right">
+<h3 class="subtitle">HTML<h3>
+<p class="paragraf"><strong title="HTML">HyperTextMarkupLanguage</strong> este un limbaj de <em>marcare</em> folosit pentru crearea<i> paginilor web</i> și pot fi afișate într-un browser.</p> 
+<p class="paragraf">Și are ca scop prezentarea informațiilor.</p>
+<p>Acum vă voi prezenta sintaxa și structura unui document html:</p>
+<div class="section1">
+<code>
+&lt!DOCTYPE html&gt <span class="coment">&lt!--aici definim documentul ca fiind de tip html--&gt </span> <br>
+&nbsp&nbsp&lthtml&gt <span class="coment">&lt!--de aici începe documentul--&gt </span><br>
+&nbsp&nbsp&nbsp&lthead&gt <span class="coment"> &lt!--aici este pusa metadata despre pagina web(nu se afiseaza)--&gt </span><br>
+&nbsp&nbsp&nbsp&nbsp&lttitle&gt Prima mea pagina web&lt/title&gt <span class="coment">&lt!--așa se pune un titlu paginii--&gt </span><br> 
+&nbsp&nbsp&nbsp&lt/head&gt  <br>
+&nbsp&nbsp&nbsp&ltbody&gt <span class="coment">&lt!--aici începe corpul paginii(ceea ce este afișat in browser)--&gt </span><br>
+&nbsp&nbsp&nbsp&nbsp&ltp style="color:red"&gtAcesta este un paragraf&lt/p&gt  <br>
+&nbsp&nbsp&nbsp&nbsp&ltp&gtAcesta este alt paragraf&lt/p&gt <br>
+&nbsp&nbsp&nbsp&lt/body&gt <br>
+&nbsp&lt/html&gt <br>
+
+<span class="coment">&lt!--Ceea ce am scris astfel se numeste comentariu și este ignorat de browser --&gt </span>
+</code>
+</div>
+<hr>
+<h3 class="subtitle">Etichetele</h3>
+<p class="paragraf"><strong>Sunt cuvinte cheie scrise între paranteze unghiulare &lt &gt. Acestea îi spun browser-ului ce sa facă.
+La majoritatea etichetelor trebuie să se marcheze sfarșitul cu &lt/nume_eticheta&gt. </strong></p>
+<hr>
+<h3 class="subtitle">Atributele</h3>
+<p class="paragraf"><strong>Atributele aduc mai multa informație unui element dintr-o pagina web.</strong></p>
+<p class="paragraf"><strong>Are sintaxa: nume="valoare".</strong>
+<hr>
+<h3 class="subtitle">Cum pun link-uri către alte pagini?</h3>
+<p class="paragraf"><strong>Poți pune link-uri cu ajutorul etichetei &lta&gt,la care se pune atributul href,care are ca valoare adresa paginii la care se face legatură.</strong></p>
+<strong>
+<div class="section1">
+<code>&lta href="url"&gtlink&lt/a&gt </code><br>
+Se va afisa așa:
+<a href="#url">link</a>
+</div>
+<hr>
+<h3 class="subtitle">Cum se afișeaza o imagine?</h3>
+<div class="section1">
+<code>
+&ltimg src="url"alt="alternativa"width="200px"height="100px"&gt
+</code>
+</div>
+<hr>
+<h3 class="subtitle">Heading-urile<h3>
+<p class="paragraf">Sunt importante deoarece motoarele de căutare le folosesc pentru a indexa conținutul paginii.</p>
+<p class="paragraf">După ordinea importanței lor există heading-uri numerotate de la 1 la 6,1 fiind cel mai important.</p>
+<div class="section1">
+<code>&lth1&gtHeading1&lt/h1&gt <h1>Heading1</h1><br>
+&lth2&gtHeading2&lt/h2&gt <h2>Heading2</h2><br>
+&lth3&gtHeading3&lt/h3&gt<h3>Heading3</h3><br>
+&lth4&gtHeading1&lt/h4&gt<h4>Heading4</h4><br>
+&lth5&gtHeading5&lt/h5&gt<h5>Heading5</h5><br>
+&lth6&gtHeading6&lt/h6&gt<h6>Heading6</h6><br>
+</div>
+<p class="paragraf"><span class="note">Notă:</span></p><br>
+<p class="paragraf">Majoritatea elementelor au structura:<mark>&lteticheta&gtcontinut&lt/eticheta&gt </mark></p>
+<p class="paragraf">Exceptie fac elementele:
+<ul><li>&lthr&gt-este o linie orizontală și se foloseste pentru a separa diverse conținuturi</li>
+<li>&ltbr&gt-este folosită pentru a trece la rândul/linia următoare</li>
+</p>
+<hr>
+<h3 class="subtitle">Liste</h3>
+<table >
+<tr>
+<td><h2 class="subtitle">Neordonate</h2></td>
+<td><h2 class="subtitle">Ordonate</h2></td>
+</tr>
+<tr>
+<td><ul>
+<li>item</li>
+<li>item</li>
+<li>item</li>
+</ul>
+</td>
+<td><ol>
+<li>item</li>
+<li>item</li>
+<li>item</li>
+</ol>
+</td>
+</tr>
+</table>
+<p class="paragraf">Listele neordonate au structura:</p>
+<div class="section1">
+<code>&ltul&gt <br>
+&ltli&gtitem1&lt/li&gt <br>
+&ltli&gtitem2&lt/li&gt <br>
+&lt/ul&gt
+</code>
+</div>
+<p class="paragraf">Denumirea etichetei &ltul&gt vine din engleza,fiind prescurtarea de la unordered list.</p>
+<p class="paragraf">Listele ordonate au structura:</p>
+<div class="section1">
+<code>&ltol&gt <br>
+&ltli&gtitem1&lt/li&gt <br>
+&ltli&gtitem2&lt/li&gt <br>
+&lt/ol&gt
+</code>
+</div>
+<p class="paragraf">Denumirea etichetei &ltol&gt vine din engleza,fiind prescurtarea de la ordered list.</p>
+<hr>
+<h3 class="subtitle">Tabeluri</h3>
+<p class="paragraf">Pentru a realiza tabeluri in html trebuie sa urmarim sintaxa:</p>
+<div class="section1">
+<code>
+&lttable&gt <span class="coment">&lt!--Definește tabelul--&gt </span> <br>
+&lttr&gt <span class="coment">&lt!--Definește liniile tabelului(tr este abrevierea de la table row)--&gt </span><br>
+&ltth&gtNume&lt/th&gt <span class="coment">&lt!--Definește antetul tabelului(th=table header)--&gt </span><br>
+&ltth&gtVarsta&lt/th&gt <br>
+&ltth&gtJob&lt/th&gt <br>
+&lt/tr&gt <br>
+&lttr&gt <br>
+&lttd&gtJohn&lt/td&gt <span class="coment">&lt!--Definește datele din tabel(td este abrevierea de la table data)--&gt </span><br>
+&lttd&gt23&lt/td&gt <br>
+&lttd&gtprogramator&lt/td&gt <br>
+&lt/tr&gt <br>
+&lt/table&gt
+</code>
+</div>
+<h3 class="tomato">Rezultatul:</h3>
+<h5 class="note">Notă:</h5>
+<p style="color:mediumseagreen">Am modificat tabelul pentru a-i adauga culoare și borduri.</p>
+<table class="tabelm">
+<tr class="tabelm">
+<th id="blue" class="tabelm">Nume</th>
+<th id="blue" class="tabelm">Vârsta</th>
+<th id="blue" class="tablem">Job</th>
+</tr>
+<tr class="tabelm">
+<td class="tabelm">John</td>
+<td class="tabelm">23</td>
+<td class="tablem">programator</td>
+</tr>
+</table>
+<p style="color:mediumseagreen">Ar fi arătat așa fără stilurile adaugate:</p>
+<table>
+<tr> 
+<th>Nume</th> 
+<th>Varsta</th> 
+<th>Job</th> 
+</tr> 
+<tr> 
+<td>John</td> 
+<td>23</td> 
+<td>programator</td> 
+</tr> 
+</table>
+</strong>
+</div>
+</body>
+</html>

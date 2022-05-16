@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+ <meta lang="ro">
+ <meta name="author" content="Maxim Ionescu">
+ <meta name="description" content="Programare web tutorial">
+ <meta name="keywords" content="HTML,CSS,Processing,JavaScript">
+<title>Programarea Web</title>
+<link href="style.css" type="text/css" rel="stylesheet">
+<link href="style2.css" type="text/css" rel="stylesheet">
+<link rel="shortcut icon" href="images/favimg.png" type="image/x-icon">
+<link rel="icon" href="images/favimg.png">
+<style>
+.nemetale{
+background-color:#ffaaff;
+text-align:center;
+}
+.nemetale:hover{
+background-color:#cc88cc;
+}
+.gazenobile{
+background-color:#00ffff;
+
+ text-align:center;
+}
+.gazenobile:hover{
+background-color:#00bbbb;
+}
+.metale_alcaline{
+background-color:#00ff00;
+text-align:center ;
+}
+.metale_alcaline:hover{
+background-color:#00aa00;
+}
+.alcp{
+background-color:#cccccc;
+text-align:center ;
+}
+.alcp:hover{
+background-color:#aaaaaa
+}
+.metaloizi{
+background-color:#0099ff ;
+text-align=center;
+}
+.metaloizi:hover{
+background-color:#0077dd;
+}
+.halogeni{
+background-color:#aabb22;
+text-align:center;
+}
+.halogeni:hover{
+background-color:#889900;
+}
+.mtp{
+background-color:#ffbbbb;
+text-align:center;
+}
+.mtp:hover{
+background-color:#cc9999;
+}
+.mt{
+background-color:#00cccc;
+text-align:center;
+}
+.mt:hover{
+background-color:#009999;
+}
+.lantanide{
+background-color:#eeee00;
+text-align:center;
+}
+.lantanide:hover{
+background-color:#bbbb00;
+}
+.actinide{
+background-color:#00cc44;
+text-align:center; 
+}
+.actinide:hover{
+background-color:#00aa22;
+
+}
+
+a{
+
+text-decoration:none;
+color:black;
+}
+.red{
+color:red;
+}
+.blue{
+color:blue;
+}
+.green{
+color:#006400;
+}
+.video1{
+width:780px;
+height:450px;
+}
+.original{
+color:blue;
+}
+.original:hover{
+color:green;
+}
+</style>
+<script>
+function background(){
+    document.body.style.background ="url(images/matrix.gif)"
+}
+function normal(){
+	document.body.style.background="url(images/bgimg.jpg)"
+}
+</script>
+</head>
+<body>
+<div class="title">
+<img src="images/titlu.png" alt="Programarea Web" style="border:none;width:600px;height:73px">
+</div>
+<div class="topnav">
+<a href="index.html">Home</a>
+<a href="html.html">HTML</a>
+<a href="css.html">CSS</a>
+<a href="javascript.html">JavaScript</a>
+<a href="processing.html">Processing</a>
+<a class="active" href="other.html">Other</a>
+</div>
+<hr class="t">
+<button class="button" type="button"onclick="background()">Change</button><br>
+<button class="button" type="button"onclick="normal()">Undo</button>
+<div class="content">
+<strong><p class="paragraf">Acesta este un exemplu de tabel interactiv.Vă încurajez să verificați sursa paginii pentru a vedea structura tabelului</p>
+<p class="paragraf">Da-ți clic pe un element pentru mai multe detalii.</p></strong>
+<table cellpadding="6" cellspacing="2" align="center">
+<TR>
+<TD  class="nemetale" title="Hidrogen"><a class="red" href="https://ro.wikipedia.org/wiki/Hidrogen" target="_blank">H</a></TD>
+<TD></TD>
+<TD></TD>
+<TD></TD>
+<TD></TD>
+<TD></TD>
+<TD></TD>
+<TD></TD>
+<TD></TD>
+<TD></TD>
+<TD></TD>
+<TD></TD>
+<TD></TD>
+<TD></TD>
+<TD></TD>
+<TD></TD>
+<TD></TD>
+<TD class="gazenobile" title="Heliu"><a class="red" href="https://ro.wikipedia.org/wiki/Heliu" target="_blank">He</a></TD>
+</TR>
+<TR>
+<TD class="metale_alcaline" title="Litiu"><a href="https://ro.wikipedia.org/wiki/Litiu" target="_blank">Li</a></TD>
+<TD class="alcp" title="Beriliu"><a href="https://ro.wikipedia.org/wiki/Beriliu" target="_blank">Be</a></TD>
+<TD></TD>
+<TD></TD>
+<TD></TD>
+<TD></TD>
+<TD></TD>
+<TD></TD>
+<TD></TD>
+<TD></TD>
+<TD></TD>
+<TD></TD>
+<TD class="metaloizi" title="Bor"><a href="https://ro.wikipedia.org/wiki/Bor_(element)" target="_blank">B</a></TD>
+<TD class="nemetale" title="Carbon"><a href="https://ro.wikipedia.org/wiki/Carbon" target="_blank">C</a></TD>
+<TD class="nemetale" title="Azot"><a class="red" href="https://ro.wikipedia.org/wiki/Azot" target="_blank">N</a></TD>
+<TD class="nemetale" title="Oxigen"><a class="red" href="https://ro.wikipedia.org/wiki/Oxigen" target="_blank">O</a></TD>
+<TD class="halogeni" title="Fluor"><a class="red" href="https://ro.wikipedia.org/wiki/Fluor" target="_blank">F</a></TD>
+<TD  class="gazenobile" title="Neon"><a class="red" href="https://ro.wikipedia.org/wiki/Neon"  target="_blank">Ne</a></TD>
+</TR>
+<TR>
+<TD class="metale_alcaline" title="Sodiu"><a href="https://ro.wikipedia.org/wiki/Sodiu" target="_blank">Na</a></TD>
+<TD class="alcp" title="Magneziu"><a href="https://ro.wikipedia.org/wiki/Magneziu" target="_blank">Mg</a></TD>
+<TD></TD>
+<TD></TD>
+<TD></TD>
+<TD></TD>
+<TD></TD>
+<TD></TD>
+<TD></TD>
+<TD></TD>
+<TD></TD>
+<TD></TD>
+<TD class="mtp" title="Aluminiu"><a href="https://ro.wikipedia.org/wiki/Aluminiu" target="_blank">Al</a></TD>
+<TD class="metaloizi" title="Siliciu"><a href="https://ro.wikipedia.org/wiki/Siliciu" target="_blank">Si</a></TD>
+<TD class="nemetale" title="Fosfor"><a href="https://ro.wikipedia.org/wiki/Fosfor" target="_blank">P</a></TD>
+<TD class="nemetale" title="Sulf"><a href="https://ro.wikipedia.org/wiki/Sulf" target="_blank">S</a></TD>
+<TD class="halogeni" title="Clor"><a class="red" href="https://ro.wikipedia.org/wiki/Clor" target="_blank">Cl</a></TD>
+<TD class="gazenobile" title="Argon"><a class="red" href="https://ro.wikipedia.org/wiki/Argon" target="_blank">Ar</a></TD>
+</TR>
+<TR><TD class="metale_alcaline" title="Potasiu"><a href="https://ro.wikipedia.org/wiki/Potasiu" target="_blank">K</a></TD>
+<TD class="alcp" title="Calciu"><a href="https://ro.wikipedia.org/wiki/Calciu" target="_blank">Ca</a></TD>
+<TD class="mt" title="Scandiu"><a href="https://ro.wikipedia.org/wiki/Scandiu" target="_blank">Sc</a></TD>
+<TD class="mt" title="Titan"><a href="https://ro.wikipedia.org/wiki/Titan" target="_blank">Ti</a></TD>
+<TD class="mt" title="Vanadiu"><a href="https://ro.wikipedia.org/wiki/Vanadiu" target="_blank">V</a></TD>
+<TD class="mt" title="Crom"><a href="https://ro.wikipedia.org/wiki/Crom" target="_blank">Cr</a></TD>
+<TD class="mt" title="Mangan"><a href="https://ro.wikipedia.org/wiki/Mangan" target="_blank">Mn</a></TD>
+<TD class="mt" title="Fier"><a href="https://ro.wikipedia.org/wiki/Fier" target="_blank">Fe</a></TD>
+<TD class="mt" title="Cobalt"><a href="https://ro.wikipedia.org/wiki/Cobalt" target="_blank">Co</a></TD>
+<TD class="mt" title="Nichel"><a href="https://ro.wikipedia.org/wiki/Nichel" target="_blank">Ni</a></TD>
+<TD class="mt" title="Cupru"><a href="https://ro.wikipedia.org/wiki/Cupru" target="_blank">Cu</a></TD>
+<TD class="mt" title="Zinc"><a href="https://ro.wikipedia.org/wiki/Zinc" target="_blank">Zn</a></TD>
+<TD class="mtp" title="Galiu"><a class="blue" href="https://ro.wikipedia.org/wiki/Galiu" target="_blank">Ga</a></TD>
+<TD class="metaloizi" title="Germaniu"><a href="https://ro.wikipedia.org/wiki/Germaniu" target="_blank">Ge</a></TD>
+<TD class="metaloizi" title="Arsenic"><a href="https://ro.wikipedia.org/wiki/Arsen" target="_blank">As</a></TD>
+<TD class="nemetale" title="Seleniu"><a href="https://ro.wikipedia.org/wiki/Seleniu" target="_blank">Se</a></TD>
+<TD class="halogeni" title="Brom"><a class="blue" href="https://ro.wikipedia.org/wiki/Brom" target="_blank">Br</a></TD>
+<TD class="gazenobile" title="Kripton"><a class="red" href="https://ro.wikipedia.org/wiki/Kripton" target="_blank">Kr</a></TD>
+</TR>
+<TR>
+<TD class="metale_alcaline" title="Rubidiu"><a href="https://ro.wikipedia.org/wiki/Rubidiu" target="_blank">Rb</a></TD> 
+<TD class="alcp" title="Stronțiu"><a href="https://ro.wikipedia.org/wiki/Stron%C8%9Biu" target="_blank">Sr</a></TD>
+<TD class="mt" title="Ytriu"><a href="https://ro.wikipedia.org/wiki/Ytriu" target="_blank">Y</a></TD>
+<TD class="mt" title="Zirconiu"><a href="https://ro.wikipedia.org/wiki/Zirconiu" target="_blank">Zr</a></TD>
+<TD class="mt" title="Niobiu"><a href="https://ro.wikipedia.org/wiki/Niobiu" target="_blank">Nb</a></TD>
+<TD class="mt" title="Molibden"><a href="https://ro.wikipedia.org/wiki/Molibden" target="_blank">Mo</a></TD>
+<TD class="mt" title="Technețiu"><a class="green" href="https://ro.wikipedia.org/wiki/Techne%C8%9Biu" target="_blank">Tc</a></TD>
+<TD class="mt" title="Ruteniu"><a href="https://ro.wikipedia.org/wiki/Ruteniu" target="_blank">Ru</a></TD>
+<TD class="mt" title="Rodiu"><a href="https://ro.wikipedia.org/wiki/Rodiu" target="_blank">Rh</a></TD>
+<TD class="mt" title="Paladiu"><a href="https://ro.wikipedia.org/wiki/Paladiu" target="_blank">Pd</a></TD>
+<TD class="mt" title="Argint"><a href="https://ro.wikipedia.org/wiki/Argint" target="_blank">Ag</a></TD>
+<TD class="mt" title="Cadmiu"><a href="https://ro.wikipedia.org/wiki/Cadmiu" target="_blank">Cd</a></TD>
+<TD class="mtp" title="Indiu"><a href="https://ro.wikipedia.org/wiki/Indiu" target="_blank">In</a></TD>
+<TD class="mtp" title="Staniu"><a href="https://ro.wikipedia.org/wiki/Staniu" target="_blank">Sn</a></TD>
+<TD class="metaloizi" title="Antimoniu"><a href="https://ro.wikipedia.org/wiki/Stibiu" target="_blank">Sb</a></TD>
+<TD class="metaloizi" title="Telur"><a href="https://ro.wikipedia.org/wiki/Telur" target="_blank">Te</a></TD>
+<TD class="halogeni" title="Iod"><a href="https://ro.wikipedia.org/wiki/Iod" target="_blank">I</a></TD>
+<TD class="gazenobile" title="Xenon"><a class="red" href="https://ro.wikipedia.org/wiki/Xenon"target="_blank">Xe</a></TD>
+</TR>
+<TR>
+<TD class="metale_alcaline" title="Cesiu"><a class="blue" href="https://ro.wikipedia.org/wiki/Cesiu" target="_blank">Cs</a></TD>
+<TD class="alcp" title="Bariu"><a href="https://ro.wikipedia.org/wiki/Bariu" target="_blank">Ba</a></TD>
+<TD class="lantanide" title="Lantanide"></TD>
+<TD class="mt" title="Hafniu"><a href="https://ro.wikipedia.org/wiki/Hafniu" target="_blank">Hf</a></TD>
+<TD class="mt" title="Tantal"><a href="https://ro.wikipedia.org/wiki/Tantal" target="_blank">Ta</a></TD> 
+<TD class="mt" title="Wolfram"><a href="https://ro.wikipedia.org/wiki/Wolfram" target="_blank">W</a></TD>
+<TD class="mt" title="Reniu"><a href="https://ro.wikipedia.org/wiki/Reniu" target="_blank">Re</a></TD>
+<TD class="mt" title="Osmiu"><a href="https://ro.wikipedia.org/wiki/Osmiu" target="_blank">Os</a></TD>
+<TD class="mt" title="Iridiu"><a href="https://ro.wikipedia.org/wiki/Iridiu" target="_blank">Ir</a></TD>
+<TD class="mt" title="Platina"><a href="https://ro.wikipedia.org/wiki/Platin%C4%83" target="_blank">Pt</a></TD>
+<TD class="mt" title="Aur"><a href="https://ro.wikipedia.org/wiki/Aur" target="_blank">Au</a></TD>
+<TD class="mt" title="Mercur"><a class="blue" href="https://ro.wikipedia.org/wiki/Mercur_(element)" target="_blank">Hg</a></TD>
+<TD class="mtp" title="Taliu"><a href="https://ro.wikipedia.org/wiki/Taliu" target="_blank">Tl</a></TD>
+<TD class="mtp" title="Plumb"><a href="https://ro.wikipedia.org/wiki/Plumb" target="_blank">Pb</a></TD>
+<TD class="mtp" title="Bismut"><a href="https://ro.wikipedia.org/wiki/Bismut" target="_blank">Bi</a></TD>
+<TD class="metaloizi" title="Poloniu"><a href="https://ro.wikipedia.org/wiki/Poloniu" target="_blank">Po</a></TD>
+<TD class="halogeni" title="Astatin"><a href="https://ro.wikipedia.org/wiki/Astatiniu" target="_blank">At</a></TD>
+<TD class="gazenobile" title="Radon"><a class="red" href="https://ro.wikipedia.org/wiki/Radon" target="_blank">Rn</a></TD>
+</TR>
+<TR>
+<TD class="metale_alcaline" title="Franciu"><a class="green" class="blue" href="https://ro.wikipedia.org/wiki/Franciu" target="_blank">Fr</a></TD>
+<TD class="alcp" title="Radiu"><a class="green" href="https://ro.wikipedia.org/wiki/Radiu" target="_blank">Ra</a></TD>
+<TD class="actinide" title="Actinide"></TD>
+<TD class="mt" title="Rutherfordiu"><a class="green" href="https://ro.wikipedia.org/wiki/Rutherfordiu" target="_blank">Rf</a></TD>
+<TD class="mt" title="Dubniu"><a class="green" href="https://ro.wikipedia.org/wiki/Dubniu" target="_blank">Db</a></TD>
+<TD class="mt" title="Seaborgium"><a class="green" href="https://ro.wikipedia.org/wiki/Seaborgiu" target="_blank">Sg</a></TD>
+<TD class="mt" title="Bohriu"><a class="green" href="https://ro.wikipedia.org/wiki/Bohriu" target="_blank">Bh</a></TD>
+<TD class="mt" title="Hassiu"><a class="green" href="https://ro.wikipedia.org/wiki/Hassiu" target="_blank">Hs</a></TD>
+<TD class="mt" title="Meitneriu"><a class="green" href="https://ro.wikipedia.org/wiki/Meitneriu" target="_blank">Mt</a></TD>
+<TD class="mt" title="Darmstadtiu"><a class="green" href="https://ro.wikipedia.org/wiki/Darmstadtiu" target="_blank">Ds</a></TD>
+<TD class="mt" title="Roentgeniu"><a class="green" href="https://ro.wikipedia.org/wiki/Roentgeniu" target="_blank">Rg</a></TD>
+<TD class="mt" title="Coperniciu"><a class="green" href="https://ro.wikipedia.org/wiki/Coperniciu" target="_blank">Cn</a></TD>
+<TD class="mtp" title="Nihoniu(Uut)"><a class="green" href="https://ro.wikipedia.org/wiki/Nihoniu" target="_blank">Nh</a></TD>
+<TD class="mtp" title="Fleroviu(Uuq)"><a class="green" href="https://ro.wikipedia.org/wiki/Fleroviu" target="_blank">Fl</a></TD>
+<TD class="mtp" title="Moscoviu(Uup)"><a class="green" href="https://ro.wikipedia.org/wiki/Moscoviu" target="_blank">Mc</a></TD>
+<TD class="mtp" title="Livermoriu(Uuh)"><a class="green" href="https://ro.wikipedia.org/wiki/Livermoriu" target="_blank">Lv</a></TD>
+<TD class="halogeni" title="Tennessine(Uus)"><a class="green" href="https://ro.wikipedia.org/wiki/Tennessine" target="_blank">Ts</a></TD>
+<TD class="gazenobile"  title="Oganesson(Uuo)"><a class="green" href="https://ro.wikipedia.org/wiki/Oganesson" target="_blank">Og</a></TD>
+</TR>
+<TR>
+<TD></TD>
+<TD></TD>
+<TD></TD>
+<TD></TD>
+<TD></TD>
+<TD></TD>
+<TD></TD>
+<TD></TD>
+<TD></TD>
+<TD></TD>
+<TD></TD>
+<TD></TD>
+<TD></TD>
+<TD></TD>
+<TD></TD>
+<TD></TD>
+<TD></TD>
+<TD></TD>
+
+</TR>
+<TR>
+<TD></TD>
+<TD></TD>
+<TD></TD>
+<TD class="lantanide" title="Lantan"><a href="https://ro.wikipedia.org/wiki/Lantan" target="_blank">La</a></TD>
+<TD class="lantanide" title="Ceriu"><a href="https://ro.wikipedia.org/wiki/Ceriu" target="_blank">Ce</a></TD>
+<TD class="lantanide" title="Praseodim"><a href="https://ro.wikipedia.org/wiki/Praseodim" target="_blank">Pr</a></TD>
+<TD class="lantanide" title="Neodim"><a href="https://ro.wikipedia.org/wiki/Neodim" target="_blank">Nd</a></TD>
+<TD class="lantanide" title="Promețiu"><a class="green" href="https://ro.wikipedia.org/wiki/Prome%C8%9Biu" target="_blank">Pm</a></TD>
+<TD class="lantanide" title="Samariu"><a href="https://ro.wikipedia.org/wiki/Samariu" target="_blank">Sm</a></TD>
+<TD class="lantanide" title="Europiu"><a href="https://ro.wikipedia.org/wiki/Europiu" target="_blank">Eu</a></TD>
+<TD class="lantanide" title="Gadoliniu"><a href="https://ro.wikipedia.org/wiki/Gadoliniu" target="_blank">Gd</a></TD>
+<TD class="lantanide" title="Terbiu"><a href="https://ro.wikipedia.org/wiki/Terbiu " target="_blank">Tb</a></TD>
+<TD class="lantanide" title="Disprosiu"><a href="https://ro.wikipedia.org/wiki/Disprosiu" target="_blank">Dy</a></TD>
+<TD class="lantanide" title="Holmiu"><a href="https://ro.wikipedia.org/wiki/Holmiu" target="_blank">Ho</a></TD>
+<TD class="lantanide" title="Erbiu"><a href="https://ro.wikipedia.org/wiki/Erbiu" target="_blank">Er</a></TD>
+<TD class="lantanide" title="Tuliu"><a href="https://ro.wikipedia.org/wiki/Tuliu" target="_blank">Tm</a></TD>
+<TD class="lantanide" title="Yterbiu"><a href="https://ro.wikipedia.org/wiki/Yterbiu" target="_blank">Yb</a></TD>
+<TD class="lantanide" title="Lutețiu"><a href="https://ro.wikipedia.org/wiki/Lute%C8%9Biu" target="_blank">Lu</a></TD>
+</TR>
+<TR>
+<TD></TD>
+<TD></TD>
+<TD></TD>
+<TD class="actinide" title="Actiniu"><a class="green" href="https://ro.wikipedia.org/wiki/Actiniu" target="_blank">Ac</a></TD>
+<TD class="actinide" title="Toriu"><a class="green" href="https://ro.wikipedia.org/wiki/Thoriu" target="_blank">Th</a></TD>
+<TD class="actinide" title="Protactiniu"><a class="green" href="https://ro.wikipedia.org/wiki/Protactiniu" target="_blank">Pa</a></TD>
+<TD class="actinide" title="Uraniu"><a class="green" href="https://ro.wikipedia.org/wiki/Uraniu" target="_blank">U</a></TD>
+<TD class="actinide" title="Neptuniu"><a class="green" href="https://ro.wikipedia.org/wiki/Neptuniu" target="_blank">Np</a></TD>
+<TD class="actinide" title="Plutoniu"><a class="green" href="https://ro.wikipedia.org/wiki/Plutoniu" target="_blank">Pu</a></TD>
+<TD class="actinide" title="Americiu"><a class="green" href="https://ro.wikipedia.org/wiki/Americiu" target="_blank">Am</a></TD>
+<TD class="actinide" title="Curiu"><a class="green" href="https://ro.wikipedia.org/wiki/Curiu" target="_blank">Cm</a></TD>
+<TD class="actinide" title="Berkeliu"><a class="green" href="https://ro.wikipedia.org/wiki/Berkeliu" target="_blank">Bk</a></TD>
+<TD class="actinide" title="Californiu"><a class="green" href="https://ro.wikipedia.org/wiki/Californiu" target="_blank">Cf</a></TD>
+<TD class="actinide" title="Einsteiniu"><a class="green" href="https://ro.wikipedia.org/wiki/Einsteiniu" target="_blank">Es</a></TD>
+<TD class="actinide" title="Fermiu"><a class="green" href="https://ro.wikipedia.org/wiki/Fermiu" target="_blank">Fm</a></TD>
+<TD class="actinide" title="Mendeleeviu"><a class="green" href="https://ro.wikipedia.org/wiki/Mendeleviu" target="_blank">Md</a></TD>
+<TD class="actinide" title="Nobeliu"><a class="green" href="https://ro.wikipedia.org/wiki/Nobeliu" target="_blank">No</a></TD>
+<TD class="actinide" title="Lawrențiu"><a class="green" href="https://ro.wikipedia.org/wiki/Lawrenciu" target="_blank">Lr</a></TD>
+</TR>
+</TABLE><BR>
+<TABLE align="center">
+<TR>
+<TD class="nemetale" style="width:40px"></TD><TD>Nemetale</TD>
+<TD class="metaloizi" style="width:40px"></TD><TD>Metaloizi</TD>
+</TR>
+<TR>
+<TD class="metale_alcaline" style="width:40px"></TD><TD>Metale alcaline</TD>
+<TD class="halogeni" style="width:40px"></TD><TD>Halogeni</TD>
+</TR>
+<TR>
+<TD class="alcp" style="width:40px"></TD><TD>Metale alcalino pământoase</TD>
+<TD class="gazenobile" style="width:40px"></TD><TD>Gaze nobile</TD>
+</TR>
+<TR>
+<TD class="mt" style="width:40px"></TD><TD>Metale de tranziție</TD>
+<TD class="lantanide" style="width:40px"></TD><TD>Lantanide</TD>
+</TR>
+<TR>
+<TD class="mtp" style="width:40px"></TD><TD>Metale de post-tranziție</TD>
+<TD class="actinide" style="width:40px"></TD><TD>Actinide</TD>
+</TR>
+</TABLE>
+<hr>
+<strong>
+<p class="paragraf">Cu ajutorul HTML se pot adăuga si elemente video-audio.</p>
+<h3 class="subtitle">Audio</h3>
+<p class="paragraf">Se folosesc cu sintaxa:</p>
+<div class="section1">
+<code>
+&ltaudio&gt <span class="coment">&lt!--definește elementul audio--&gt </span><br>
+&ltsource src="audio.mp3(adresa fișierului)"&gt <span class="coment">&lt!--adauga sursa audio...în acest caz cu extensia .mp3--&gt </span><br>
+&ltsource src="audio.ogg"&gt <span class="coment">&lt!--si aici cu extensia .ogg--&gt </span><br>
+&lt/audio&gt
+</code>
+</div>
+<p class="paragraf">Poti adăuga câte surse vrei,însa browserul o va folosi pe prima recunoscută</p> 
+<p class="tomato">Exemplu:</p>
+<audio controls>
+<source src="sounds/music1.mp3">
+<source src="sounds/music1.ogg">
+</audio>
+<p><span class="tomato">Sursa:</span><a class="a" style="text-decoration:none" href="https://www.youtube.com/watch?v=mqzBv3FYpr0" target="_blank">https://www.youtube.com/watch?v=mqzBv3FYpr0</a></p>
+<hr>
+<h3 class="subtitle">Video</h3>
+<p>Funcționeaza cu o sintaxa asemanatoare cu cea de la elementul audio</p>
+<div class="section1">
+<code>
+&ltvideo&gt <span class="coment">&lt!--defineste elementul video--&gt </span><br>
+&ltsource src="video.mp4(adresa fișierului)"&gt <span class="coment">&lt!--adaugă sursa audio...în acest caz cu extensia .mp4--&gt </span><br>
+&ltsource src="video.ogg"&gt <span class="coment">&lt!--și aici cu extensia .ogg--&gt </span><br>
+&lt/video&gt
+</div>
+<p class="tomato">Exemplu:</p>
+<video controls class="video1">
+<source src="videos/video1.mp4">
+</video>
+<p class="paragraf">Aici este un link cu video-ul  <a class="original" href="https://www.youtube.com/watch?v=KNO5F75Jwpg" target="_blank">original</a></p>
+<hr>
+<h4 class="note">Notă:</h4>
+<p class="paragraf">Etichetele &ltaudio&gt si &ltvideo&gt pot avea ca atribute:</p>
+<ul>
+<li>controls:afișeaza butoanele de control precum pause/play,volumul</li>
+<li>autoplay:începe conținutul video sau audio fără să solicite permisia utilizatorului</li>
+<li>loop:restartează videoclipul sau melodia imediat după ce se termină</li>
+</ul>
+</strong>
+</div>
+</body>
+</html>
